@@ -4,4 +4,5 @@ production:
         destination: <%= ENV['STACK_PATH'] %>/pass_ent.sh
         target: rails
         run_on: all_servers
+        execute: true
         sudo: true
