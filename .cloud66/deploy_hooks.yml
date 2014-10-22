@@ -1,0 +1,7 @@
+production:
+    after_checkout:
+      - command: echo "$PASS_ENT_KEY" > .cloud66/passenger-enterprise-license
+        target: rails
+        run_on: all_servers
+        execute: true
+        sudo: true
