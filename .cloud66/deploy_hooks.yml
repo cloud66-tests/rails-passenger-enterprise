@@ -1,7 +1,7 @@
 production:
     after_checkout:
       - source: /.cloud66/pass_ent.sh
-        destination: /tmp/pass_ent.sh
+        destination: <%= ENV['STACK_PATH'] %>/pass_ent.sh
         target: rails
         run_on: all_servers
         sudo: true
