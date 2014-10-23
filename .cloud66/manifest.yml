@@ -3,8 +3,8 @@ production:
     servers:
       - server:
           unique_name: rails1
-          vendor: 'digitalocean'
-          region: '7'
-          size: '62'
+          vendor: 'aws'
+          region: 'us-east-1'
+          size: 'm3.medium'
     configuration:
       use_asset_pipeline: true
