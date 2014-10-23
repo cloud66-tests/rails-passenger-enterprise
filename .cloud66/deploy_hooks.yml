@@ -6,3 +6,9 @@ production:
         run_on: all_servers
         execute: true
         sudo: true
+    last_thing:
+      - source: /.cloud66/scripts/curl.sh
+        destination: /tmp/curl.sh
+        target: rails
+        execute: true
+        sudo: true
