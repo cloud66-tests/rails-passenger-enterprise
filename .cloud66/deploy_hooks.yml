@@ -1,5 +1,8 @@
 production:
     after_checkout:
-      - command: echo "$PASSENGER_ENTERPRISE_KEY" > .cloud66/passenger-enterprise-license
-        target: any
+      - source: /.cloud66/pass_ent.sh
+        destination: <%= ENV['STACK_PATH'] %>/pass_ent.sh
+        target: rails
+        run_on: all_servers
         execute: true
+        sudo: true
