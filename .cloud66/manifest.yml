@@ -1,0 +1,10 @@
+production: 
+  rails: 
+    servers:
+      - server:
+          unique_name: rails1
+          vendor: 'digitalocean'
+          region: '7'
+          size: '62'
+    configuration:
+      use_asset_pipeline: true
