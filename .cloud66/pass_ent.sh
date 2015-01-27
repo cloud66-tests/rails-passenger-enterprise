@@ -1,1 +1,1 @@
-echo "$PASSENGER_ENTERPRISE_KEY" > /etc/passenger-enterprise-license
+curl -s -o /etc/passenger-enterprise-license $PASSENGER_ENTERPRISE_KEY
